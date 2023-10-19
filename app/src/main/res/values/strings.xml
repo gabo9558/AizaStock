@@ -1,3 +1,48 @@
 <resources>
+    <string name="marca">AizaStock</string>
+    <string name="marca_jump">AizaStock</string>
     <string name="app_name">AizaStock</string>
+    <string name="app_name_tech">AizaStock\nTech</string>
+
+    <string name="emial">Email</string>
+    <string name="password">Password</string>
+    <string name="continuar">Continuar</string>
+    <string name="stock">Stock</string>
+    <string name="total_stock">Total Stock</string>
+    <string name="in_repair">En reparación</string>
+    <string name="description">Descripción</string>
+    <string name="add_repair_detail">Agregar daño o problema</string>
+    <string name="finalizar">Finalizar</string>
+
+    <string name="consultar_info">Consultar\ninformación</string>
+    <string name="terminar_repair">Terminar\nreparación</string>
+
+    <string name="default_value">000</string>
+    <string name="permisos_necesarios">Los permisos son necesarios para utilizar la aplicación</string>
+
+    <string name="init_work">Comenzar Tarea</string>
+    <string name="group_name">Ingresa el nombre o numero de charola</string>
+    <string name="amount_group">Ingresa la cantidad de dispositivos</string>
+
+    <string name="current_work">Tarea Actual</string>
+    <string name="total">Total</string>
+    <string name="actuales">Actuales</string>
+
+    <string name="description_actual">¿La descripción actual es correcta?</string>
+    <string name="puedes_modificarla">Puedes modificar la descripción o continuar su es correcta</string>
+
+    <string name="finish_work">Terminar Tarea</string>
+    <string name="subtitle_new_item">Dispositivo nuevo</string>
+    <string name="body_new_item">¿Deseas agregar una descripcion?</string>
+
+    <string name="manual_add">Ingreso manual</string>
+    <string name="manual_add_body">Ingresa el IMEI manualmente</string>
+    <string name="imei">IMEI</string>
+    <string name="scan">Escanear</string>
+    <string name="digitar">Digitar</string>
+    <string name="total_stock_home">Total Stock: </string>
+    <string name="total_check">Total Check:</string>
+    <string name="total_faltantes">Total Faltantes:</string>
+    <string name="total_new">Total nuevos:</string>
+    <string name="delete_all">Borrar Todo</string>
 </resources>
