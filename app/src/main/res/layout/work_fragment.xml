@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/current_work"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="Charola 10" />
+
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_group_name"
+        tools:text="100"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_total_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_amount" />
+
+    <TextView
+        android:id="@+id/tv_current_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_total_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/tv_total_amount"
+        android:text="000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actuales"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_amount"
+        app:layout_constraintStart_toStartOf="@+id/tv_current_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current_amount" />
+
+    <ImageButton
+        android:id="@+id/btn_check_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_primary_action"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_camera_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finish_work"
+        app:layout_constraintStart_toStartOf="@+id/tv_total_amount"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_check_item"
+        app:layout_constraintStart_toStartOf="@+id/btn_check_item"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check_item" />
+
+    <ImageButton
+        android:id="@+id/btn_manual_Add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_primary_action"
+        android:elevation="10dp"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dialpad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_check_item"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_amount"
+        app:layout_constraintTop_toTopOf="@+id/btn_check_item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digitar"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_manual_Add"
+        app:layout_constraintStart_toStartOf="@+id/btn_manual_Add"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manual_Add" />
+
+    <Button
+        android:id="@+id/btn_finish_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="@string/finish_work"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

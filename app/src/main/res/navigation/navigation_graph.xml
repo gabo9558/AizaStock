@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_login"
+    android:id="@+id/navigation_graph">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.quantum.stockcontroll.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/login_fragment">
+
+        <action
+            android:id="@+id/login_to_home"
+            app:destination="@id/fragment_home"
+            app:popUpTo="@id/navigation_graph"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.quantum.stockcontroll.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/home_to_login"
+            app:destination="@id/fragment_login"
+            app:popUpTo="@id/navigation_graph"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/home_to_create_work"
+            app:destination="@+id/fragment_create_work" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_create_work"
+        android:name="com.quantum.stockcontroll.fragments.CreateWorkFragment"
+        android:label="Create work"
+        tools:layout="@layout/create_work_fragment">
+
+        <action
+            android:id="@+id/create_work_to_work"
+            app:destination="@+id/fragment_work"
+            app:popUpTo="@id/fragment_work"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_work"
+        android:name="com.quantum.stockcontroll.fragments.WorkFragment"
+        android:label="Work"
+        tools:layout="@layout/work_fragment">
+
+        <action
+            android:id="@+id/work_to_fragment_scan"
+            app:destination="@+id/fragment_scan_add"/>
+
+        <action
+            android:id="@+id/work_to_home"
+            app:destination="@id/fragment_home"/>
+
+        <action
+            android:id="@+id/work_to_manual_add"
+            app:destination="@id/fragment_manual_add"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_manual_add"
+        android:name="com.quantum.stockcontroll.fragments.ManualAddFragment"
+        android:label="Manual Add"
+        tools:layout="@layout/manual_add_fragment">
+
+        <action
+            android:id="@+id/manual_to_description"
+            app:destination="@id/fragment_description_add"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_scan_add"
+        android:name="com.quantum.stockcontroll.fragments.ScanAddFragment"
+        android:label="Scan Add"
+        tools:layout="@layout/scan_fragment">
+
+        <action
+            android:id="@+id/scan_add_to_description_add"
+            app:destination="@id/fragment_description_add"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_description_add"
+        android:name="com.quantum.stockcontroll.fragments.DescriptionAddFragment"
+        android:label="Add Description"
+        tools:layout="@layout/description_fragment">
+
+        <action
+            android:id="@+id/description_add_to_work"
+            app:destination="@+id/fragment_work"
+            app:popUpTo="@id/fragment_work"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+</navigation>
