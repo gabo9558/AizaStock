@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.quantum.aizastock'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.quantum.aizastock"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0.0"
 
@@ -21,10 +21,20 @@ android {
         viewBinding = true
     }
 
+    signingConfigs {
+        release {
+            storeFile file('keystore.jks')
+            storePassword "QuantumTech//+Dev.95"
+            keyAlias "key0"
+            keyPassword "QuantumTech//+Dev.95"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.quantum.stockcontroll.fragments.LoginFragment"
+        android:name="com.quantum.aizastock.fragments.LoginFragment"
         android:label="Login"
         tools:layout="@layout/login_fragment">
 
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/fragment_home"
-        android:name="com.quantum.stockcontroll.fragments.HomeFragment"
+        android:name="com.quantum.aizastock.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment">
 
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/fragment_create_work"
-        android:name="com.quantum.stockcontroll.fragments.CreateWorkFragment"
+        android:name="com.quantum.aizastock.fragments.CreateWorkFragment"
         android:label="Create work"
         tools:layout="@layout/create_work_fragment">
 
@@ -53,7 +53,7 @@
 
     <fragment
         android:id="@+id/fragment_work"
-        android:name="com.quantum.stockcontroll.fragments.WorkFragment"
+        android:name="com.quantum.aizastock.fragments.WorkFragment"
         android:label="Work"
         tools:layout="@layout/work_fragment">
 
@@ -73,7 +73,7 @@
 
     <fragment
         android:id="@+id/fragment_manual_add"
-        android:name="com.quantum.stockcontroll.fragments.ManualAddFragment"
+        android:name="com.quantum.aizastock.fragments.ManualAddFragment"
         android:label="Manual Add"
         tools:layout="@layout/manual_add_fragment">
 
@@ -85,7 +85,7 @@
 
     <fragment
         android:id="@+id/fragment_scan_add"
-        android:name="com.quantum.stockcontroll.fragments.ScanAddFragment"
+        android:name="com.quantum.aizastock.fragments.ScanAddFragment"
         android:label="Scan Add"
         tools:layout="@layout/scan_fragment">
 
@@ -98,7 +98,7 @@
 
     <fragment
         android:id="@+id/fragment_description_add"
-        android:name="com.quantum.stockcontroll.fragments.DescriptionAddFragment"
+        android:name="com.quantum.aizastock.fragments.DescriptionAddFragment"
         android:label="Add Description"
         tools:layout="@layout/description_fragment">
 
