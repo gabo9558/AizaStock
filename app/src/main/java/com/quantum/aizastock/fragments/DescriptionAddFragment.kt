@@ -51,7 +51,7 @@ class DescriptionAddFragment: Fragment() {
 
     private fun initData(){
         val map: HashMap<String, String> = HashMap()
-        map["IMEI"] = bundle.getString("IMEI", "")
+        map["serial_number"] = bundle.getString("serial_number", "")
         consultItem(map)
     }
 
@@ -60,7 +60,7 @@ class DescriptionAddFragment: Fragment() {
         binding.btnFinish.setOnClickListener {
 
             val map: HashMap<String, String> = HashMap()
-            map["IMEI"] = bundle.getString("IMEI", "")
+            map["serial_number"] = bundle.getString("serial_number", "")
             map["description"] = binding.etDescription.text.toString()
             map["user_id"] = PreferenceUtils.getUserID(requireContext()) ?: ""
             map["group_id"] = PreferenceUtils.getCurrentID(requireContext()).toString()
@@ -95,7 +95,7 @@ class DescriptionAddFragment: Fragment() {
                         println("Error: ${error.message}")
                         Toast.makeText(requireContext(), "Error: ${error.message}", Toast.LENGTH_LONG).show()
 
-                        if (error.message == "IMEI ya fue validado"){
+                        if (error.message == "serial_number ya fue validado"){
                             view?.let { Navigation.findNavController(it).navigate(R.id.description_add_to_work) }
                         }
                     }
@@ -113,7 +113,7 @@ class DescriptionAddFragment: Fragment() {
 
     private fun consultItem(map: HashMap<String, String>){
         val queue = Volley.newRequestQueue(requireContext())
-        val url = Urls.URL_BASE + Urls.CONSULT_IMEI
+        val url = Urls.URL_BASE + Urls.CONSULT_SN
 
         val request = JsonObjectRequest(
             Request.Method.POST, url,

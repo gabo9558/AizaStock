@@ -39,7 +39,7 @@ class ManualAddFragment: Fragment() {
         binding.btnFinish.setOnClickListener {
             val bundle = Bundle()
             bundle.apply {
-                putString("IMEI", binding.etImeiManual.text.toString())
+                putString("serial_number", binding.etImeiManual.text.toString())
             }
             view?.let {
                 Navigation.findNavController(it).navigate(R.id.manual_to_description, bundle)

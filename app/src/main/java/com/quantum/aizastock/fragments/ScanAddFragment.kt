@@ -89,13 +89,13 @@ class ScanAddFragment: Fragment() {
                     binding.previewView.post {
 
                         AlertDialog.Builder(requireContext())
-                            .setMessage("Agregar el IMEI: ${qrResult.text}")
+                            .setMessage("Agregar el serial_number: ${qrResult.text}")
                             .setPositiveButton("Agregar") { _, _ ->
 
                                 //ACTION
                                 val bundle = Bundle()
                                 bundle.apply {
-                                    putString("IMEI", qrResult.text)
+                                    putString("serial_number", qrResult.text)
                                 }
                                 view?.let { viewx ->
                                     Navigation.findNavController(viewx).navigate(R.id.scan_add_to_description_add, bundle)

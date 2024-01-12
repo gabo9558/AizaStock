@@ -36,8 +36,8 @@
     <string name="body_new_item">¿Deseas agregar una descripcion?</string>
 
     <string name="manual_add">Ingreso manual</string>
-    <string name="manual_add_body">Ingresa el IMEI manualmente</string>
-    <string name="imei">IMEI</string>
+    <string name="manual_add_body">Ingresa el Numero de Serie manualmente</string>
+    <string name="serial_number">Numero de Serie</string>
     <string name="scan">Escanear</string>
     <string name="digitar">Digitar</string>
     <string name="total_stock_home">Total Stock: </string>
